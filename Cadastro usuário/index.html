@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+
+   <title>Input Animation | CodingNepal</title>
+</head>
+<body>
+   <aside>
+      <figure>
+         <img id="imagelogin" src="user.png" alt="Image of a user operating the system.">
+      </figure>
+   </aside>
+   
+   <main>
+      <form id="login" class="wrapper">
+         <div class="input-data">
+            <input type="text" required name="name">
+            <div class="underline"></div>
+            <label>Name</label>
+         </div>
+   
+         <div class="input-data">
+            <input type="email" required>
+            <div class="underline"></div>
+            <label>E-mail</label>
+         </div>
+      </form>
+   </main>
+
+   <script>
+      login.name.addEventListener("blur", checkEmpty)
+
+      function checkEmpty(event) {
+         console.log(event)
+         /*if (event) {
+            //Adicionar classe
+            document.body.classList.toggle('dark')
+         }*/
+      }
+      
+   </script>
+</body>
+</html>
